@@ -1,1 +1,1 @@
-## Full-stack E-commerce Web Application
+## Full-stack e-commerce web application
