@@ -1,14 +1,15 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
+import { DataTable } from '@/components/ui/data-table'
 import Heading from '@/components/ui/heading'
 import { Separator } from '@/components/ui/separator'
-import { Billboard } from '@prisma/client'
 import { Plus } from 'lucide-react'
 import { useParams, useRouter } from 'next/navigation'
+import { BillboardColumn, columns } from './columns'
 
 type Props = {
-  data: Billboard[]
+  data: BillboardColumn[]
 }
 
 function BillboardClient({ data }: Props) {
@@ -28,6 +29,7 @@ function BillboardClient({ data }: Props) {
         </Button>
       </div>
       <Separator />
+      <DataTable searchKey='label' columns={columns} data={data} />
     </>
   )
 }
