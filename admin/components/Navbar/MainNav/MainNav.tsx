@@ -12,25 +12,30 @@ function MainNav({ className, ...props }: React.HTMLAttributes<HTMLElement>) {
   const routes = [
     {
       href: `/${params.storeId}`,
-      label: 'Dashboard',
+      label: "Dashboard",
       active: pathname === `/${params.storeId}`,
     },
     {
       href: `/${params.storeId}/billboards`,
-      label: 'Billboards',
+      label: "Billboards",
       active: pathname === `/${params.storeId}/billboards`,
     },
     {
       href: `/${params.storeId}/categories`,
-      label: 'Categories',
+      label: "Categories",
       active: pathname === `/${params.storeId}/categories`,
     },
     {
+      href: `/${params.storeId}/sizes`,
+      label: "Sizes",
+      active: pathname === `/${params.storeId}/sizes`,
+    },
+    {
       href: `/${params.storeId}/settings`,
-      label: 'Settings',
+      label: "Settings",
       active: pathname === `/${params.storeId}/settings`,
     },
-  ]
+  ];
 
   return (
     <nav className={cn('flex items-center space-x-4 lg:space-x-6', className)}>
