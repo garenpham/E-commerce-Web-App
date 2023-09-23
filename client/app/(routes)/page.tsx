@@ -1,7 +1,7 @@
 import getBillboard from '@/actions/get-billboard'
 import getProducts from '@/actions/get-products'
-import Billboard from '@/components/Billboard/Billboard'
-import ProductList from '@/components/ProductList/ProductList'
+import Billboard from '@/components/Billboard'
+import ProductList from '@/components/ProductList'
 import Container from '@/components/ui/Container/Container'
 import React from 'react'
 

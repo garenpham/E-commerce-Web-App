@@ -154,10 +154,9 @@ function ColorForm({ initialData }: Props) {
                       />
 
                       <div
-                        className="border p-4 rounded-full"
+                        className="border p-4 border-gray-600 rounded-full"
                         style={{
                           backgroundColor: field.value,
-                          borderColor: field.value,
                         }}
                       />
                     </div>
