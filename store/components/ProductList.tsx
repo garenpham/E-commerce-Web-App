@@ -1,6 +1,6 @@
 import { Product } from '@/types'
-import NoResults from './ui/NoResults/NoResults'
-import ProductCard from './ui/ProductCard/ProductCard'
+import NoResults from './ui/NoResults'
+import ProductCard from './ui/ProductCard'
 
 type Props = {
   title: string

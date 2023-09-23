@@ -1,7 +1,7 @@
 'use client'
 
 import Button from '@/components/ui/Button/Button'
-import IconButton from '@/components/ui/IconButton/IconButton'
+import IconButton from '@/components/ui/Button/IconButton'
 import { Color, Size } from '@/types'
 import { Dialog } from '@headlessui/react'
 import { Plus, X } from 'lucide-react'

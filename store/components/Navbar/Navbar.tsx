@@ -1,8 +1,8 @@
+import getCategories from '@/actions/get-categories'
 import Link from 'next/link'
 import React from 'react'
-import Container from '../ui/Container/Container'
+import Container from '../ui/Container'
 import MainNav from './MainNav/MainNav'
-import getCategories from '@/actions/get-categories'
 import NavbarActions from './NavbarActions/NavbarActions'
 
 type Props = {}

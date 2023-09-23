@@ -4,7 +4,7 @@ import { Product } from '@/types'
 import { ShoppingCart } from 'lucide-react'
 import React from 'react'
 import Button from './ui/Button/Button'
-import Currency from './ui/Currency/Currency'
+import Currency from './ui/Currency'
 
 type Props = {
   data: Product

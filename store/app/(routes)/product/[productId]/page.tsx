@@ -3,7 +3,7 @@ import getProducts from '@/actions/get-products'
 import Info from '@/components/Info'
 import ProductList from '@/components/ProductList'
 import Gallery from '@/components/gallery'
-import Container from '@/components/ui/Container/Container'
+import Container from '@/components/ui/Container'
 import React from 'react'
 
 type Props = {

@@ -2,7 +2,7 @@ import getBillboard from '@/actions/get-billboard'
 import getProducts from '@/actions/get-products'
 import Billboard from '@/components/Billboard'
 import ProductList from '@/components/ProductList'
-import Container from '@/components/ui/Container/Container'
+import Container from '@/components/ui/Container'
 import React from 'react'
 
 type Props = {}
