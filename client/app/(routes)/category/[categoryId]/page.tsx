@@ -4,10 +4,11 @@ import getProducts from '@/actions/get-products'
 import getSizes from '@/actions/get-sizes'
 import Billboard from '@/components/Billboard'
 import Container from '@/components/ui/Container/Container'
-import React from 'react'
-import Filter from './components/filter'
 import NoResults from '@/components/ui/NoResults/NoResults'
 import ProductCard from '@/components/ui/ProductCard/ProductCard'
+import React from 'react'
+import Filter from './components/filter'
+import MobileFilters from './components/mobile-filters'
 
 export const revalidate = 0
 
@@ -38,6 +39,7 @@ async function page({ params, searchParams }: Props) {
         <Billboard data={category.billboard} />
         <div className={`px-4 sm:px-6 lg:px-8 pb-24`}>
           <div className={`lg:grid lg:grid-cols-5 lg:gap-x-8`}>
+            <MobileFilters sizes={sizes} colors={colors} />
             <div className={`hidden lg:block`}>
               <Filter valueKey='sizeId' name='Sizes' data={sizes} />
               <Filter valueKey='colorId' name='Colors' data={colors} />
