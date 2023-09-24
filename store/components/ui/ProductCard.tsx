@@ -8,6 +8,7 @@ import { MouseEventHandler } from 'react'
 import IconButton from './Button/IconButton'
 import Currency from './Currency'
 import usePreviewModal from '@/hooks/user-preview-modal'
+import useCart from '@/hooks/use-cart'
 
 type Props = {
   data: Product
@@ -23,6 +24,12 @@ function ProductCard({ data }: Props) {
   const onPreview: MouseEventHandler<HTMLButtonElement> = (e) => {
     e.stopPropagation()
     previewModal.onOpen(data)
+  }
+
+  const cart = useCart()
+  const onAddToCart: MouseEventHandler<HTMLButtonElement> = (e) => {
+    e.stopPropagation()
+    cart.addItem(data)
   }
 
   return (
@@ -49,7 +56,7 @@ function ProductCard({ data }: Props) {
             />
 
             <IconButton
-              onClick={() => {}}
+              onClick={onAddToCart}
               icon={<ShoppingCart size={20} className='text-gray-600' />}
             />
           </div>
