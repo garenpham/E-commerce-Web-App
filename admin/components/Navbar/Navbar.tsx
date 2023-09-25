@@ -2,7 +2,7 @@ import prismadb from '@/lib/prismadb'
 import { UserButton, auth } from '@clerk/nextjs'
 import { redirect } from 'next/navigation'
 import React from 'react'
-import StoreSwitcher from '../StoreSwitcher/StoreSwitcher'
+import StoreSwitcher from "../StoreSwitcher";
 import MainNav from './MainNav/MainNav'
 
 type Props = {}
